@@ -1,0 +1,309 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Home {% endblock title %}
+
+
+{% block banner %} {% include 'carousel.html' %} {% endblock banner %}
+
+{% block content %}
+<p id="top"></p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center pt-3">
+        <h1 class="welcome">WELCOME <br> TO <br> STARLIGHT HOTEL</h1>
+        <p class="luxury">Luxury, Comfort and Hospitality</p>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+        <p class="explore">Explore the new Starlight Hotel Lagos, centrally located in Lekki-Lagos. Our brand new hotel in Lagos boasts 90 guestrooms, including 5 contemporary loft suites with first class amenities to ensure a comfortable and productive stay for work or play. 
+          With 8 meeting rooms on the 2nd floor, fully equipped with state-of-the-art A/V technology and Free high-speed, wireless Internet, we are ready for your business.</p>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+        <p class="explore">At Starlight Hotel, our goal has always been to offer more than a luxurious place to sleep, more than exceptional business facilities with the latest technology, more than personalized service, more than outstanding food and amenities.
+        Our goal is to provide each guest with a hotel experience unlike any other - all at reasonably budget friendly rates. Whichever Starlight location you choose, be rest assured of our renowned hospitality and homely ambiance.</p> 
+      </div>
+    </div>
+  </div> 
+
+  <hr class="myhr">
+ <h2 class="subheads">Key Amenities</h2> 
+  <div class="container-fluid pt-3">
+    <div class="grids mb-3">
+      <div class="container mycontainer">
+        <div class="box1">
+          <div class="transbox">
+            <h5> High-end Restaurant</h5> 
+          </div>
+        </div>
+        <div class="box2">
+          <div class="transbox">
+              <h5> Fitness and Well-being</h5> 
+          </div>
+        </div>
+        <div class="box3">
+          <div class="transbox">
+            <h5>Indoor and Outdoor Pool</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="inner">
+    <img src="/sandbox/img/sch9.jpg" class="card-img-top" height="200" width="50">
+  </div> -->
+
+  <hr class="myhr">
+  <h2 class="subheads">Our Services</h2>
+  <div class="container-fluid text-center pt-5">
+    <div class="key">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <h4>24-hour Room Service</h4> 
+          <p>At Starlight, Our room service marshals work round the clock to meet your needs. Courteous and professional,
+          Starlight is sure to deliver top class service to you.</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <h4>Fully equipped Gymasium</h4>
+          <p>Burn those calories and relax! Stay fit and healthy in our well-equipped gymnasium.
+          Starlight doesn't only look after your relaxation and enjoyment but also your Well-being.</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <h4>Restaurant</h4>
+          <p>Starlight restaurant and bar is open 24 hours daily, serving you delicious Continental and Foreign cuisine.</p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <h4>Indoor and Outdoor Pools</h4>
+          <p>We have very clean pools,large enough for your evening gathering and various kinds pool parties 
+          with well trained attendants to make your experience memorable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="myhr">
+  <h2 class="subheads">Rooms and Suites</h2>
+  <div class="container-fluid mx-auto pt-5">
+    <div class="row row-cols-1 row-cols-md-3 justify-content-center g-3 pt-1 roomcat">
+      <div class="col">
+        <div class="card">
+          <img src="{% static 'img/newsuite1.jpg' %}" class="card-img" height="200">
+          <div class="card-body text-center">
+            <h6 class="card-title">Business Suite</h6>
+            <a href="{% url 'categories' %}" class="btn">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{% static 'img/famrmnw2.jpg' %}" class="card-img" height="200">
+          <div class="card-body text-center">
+            <h6 class="card-title">Family Room</h6>
+            <a href="{% url 'categories' %}" class="btn">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{% static 'img/ecoroom1.jpg' %}" class="card-img" height="200">
+          <div class="card-body text-center">
+            <h6 class="card-title">Economy room</h6>
+            <a href="{% url 'categories' %}" class="btn">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="myhr">
+  <h2 class="subheads">Promotions and Offers</h2> 
+  <div class="container-fluid pt-5">
+    <div class="row row-cols-12 row-cols-md-2 row-cols-lg-2 justify-content-center pt-1 promo">
+      <div class="col">
+        <div class="card">
+          <div class="row promo">
+            <div class="col-md-6 inner">
+              <img src="{% static 'img/elderly1.jpg' %}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h6 class="card-title">Senior Discount</h6>
+                <p class="card-text">We appreciate our seniors! And so, our seniors 62 years or older get to 
+                  save at least 10% on their room rate at Starlight hotel with our senior discount deals.
+                </p>  
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-3" style="max-width: 600px;">
+          <div class="row g-0 promo">
+            <div class="col-md-6 inner">
+              <img src="{% static 'img/promopic.jpg' %}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+                <div class="card-body">
+                <h6 class="card-title">Membership Deals</h6>
+                <p class="card-text">Enjoy much lower prices when you book directly from our website.
+                  Get discounted prices with Starlight membership points.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="card">
+          <img src="{% static 'img/promopic.jpg' %}" class="card-img" height="300">
+          <div class="card-body">
+            <h6 class="card-title">Membership Deals</h6>
+            <p class="card-text">Enjoy much lower prices when you book directly from our website. <br>
+               Also,get discounted prices with Starlight membership points.</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </div>    
+  <!-- <hr>
+  <h2 class="subheads">Explore Our Gallery</h2>
+  <hr>
+  <div class="container-fluid mx-auto">
+    <div class="row row-cols-1 row-cols-md-5 justify-content-center g-3">
+      <div class="col">
+        <div class="card">
+          <a href="{% url 'gallery' %}"><img src="{% static 'img/ecobath1.jpg' %}" class="card-img-top"></a> 
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="{% url 'gallery' %}"><img src="{% static 'img/hotellobby.jpg' %}" class="card-img-top"></a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="{% url 'gallery' %}"><img src="{% static 'img/suitebath1.jpg' %}" class="card-img-top">          
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="container-fluid map pt-5 mt-2 p-5">
+    <div class="row">
+      <div class="col-xs-12 col-md-4 col-lg-4 p-1">
+        <br>
+        <h6>FINDING OUR LOCATION</h6>
+        <br>
+        <p>Starlight Hotel Lekki <br>
+          1 Bisway St, Maroko 106104, Lekki-Lagos <br>
+          Tel: +234 906-601-2850</p>
+      </div>
+     <iframe class="col-xs-12 col-md-8 col-lg-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.675144781444!2d3.4516297!3d6.4357545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf73c138dbedb%3A0x6ce2cd9ce683c562!2sThe%20Palms%20Shopping%20Mall!5e0!3m2!1sen!2sng!4v1665741519627!5m2!1sen!2sng" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <br>
+  <h2 class="subheads">FAQs</h2>
+  <div class="container-fluid myaccordion pt-5">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2"></div>
+      <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed"  data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Does Starlight offer free wifi?
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong> <p>Yes! Our esteemed guests can enjoy fast, wireless service from anywhere in the hotel.</p></strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Does Starlight offer complimentary breakfast?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong><p>Complimentary breakfast is available to our business suites and family rooms 
+                  and also available on request to our economy guestrooms with acquired Starlight points. 
+                  More info on this is listed on our Promotions and offers section.</p></strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Does Starlight allow smoking?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong><p>No. Starlight is a smoke free hotel. Smoking will attract a fine.</p></strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Does Starlight allow pets?              
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong><p>Yes. Guests are allowed to bring pets. Do endeavour to speak to a representative for further clarifications.</p></strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Where is Starlight Hotel located?              
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong> <p>Starlight Hotel is located at 301 Victoria way, Allen road, victoria island-lagos.</p></strong>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                What is the check-in and check-out time at Starlight?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong><p>Check-in is at 12:00 noon and check-out is at 12:00 noon.</p></strong>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2"></div>  
+    </div>
+  </div>
+
+  <div class="container-fluid text-center pt-5">
+    <p class="safety">The health and safety of our guests is our top priority:<a href="#exampleModal" data-bs-toggle="modal" class="covid"> COVID-19 updates and what to expect at our hotel.</a></p>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">COVID-19 updates and safety precautions</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid text-center top">
+   <a href="#top">Go to top</a>
+  </div>
+{% endblock content %}

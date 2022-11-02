@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+html{
+  scroll-behavior: smooth;
+}
+#eventbtn {
+  width: 100%;
+}
+#eventbtn .btn {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+  background-color: rgb(148, 19, 19);
+}
+#eventbtn .btn:hover{
+  border-color: rgb(148, 19, 19);
+  background-color: white;
+  color: rgb(148, 19, 19);
+}
+.availability{
+  padding: 10px;
+  font-family: 'Cardo', serif;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 16px;
+}
+.availability2{
+  height: 7vh;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  background-color: white;
+  color: white;
+}
+.availability2 .btn{
+  padding: 10px;
+  color: white;
+  background-color: rgb(148, 19, 19);
+  border-radius: 5px;
+  font-family: 'Cardo', serif;
+  font-weight: 800;
+  font-size: 18px;
+}
+@media screen and (max-width : 1920px){
+  .availability2{
+    display: none;
+  }
+}
+@media screen and (max-width : 906px){
+ .availability{
+    display: none;
+  }
+ .availability2{
+    display: block;
+  }
+}
+.bottomform{
+  font-family: 'Cardo', serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+.offcanvas i{
+  color: rgb(148, 19, 19);
+  font-size: 30px;
+}
+.offcanvas-title img{
+  height: 20vh;
+}
+.offcanvas svg{
+  color: rgb(148, 19, 19);
+}
+.navbar-brand img {
+  height: 15vh;
+}
+.navbar {
+  color: rgb(148, 19, 19);
+  background: white;
+}
+.navbar i{
+  font-size: 35px;
+  color: rgb(148, 19, 19);
+}
+.navbar-toggler{
+  padding: 3px;
+}
+.nav {
+  background: white;
+  height: 5vh;
+}
+.nav-item a {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 20px;
+  display: inline-table;
+}
+.nav-item li{
+  display: inline;
+}
+.nav-item a:hover {
+  color: rgb(148, 19, 19);
+}
+#navbarSupportedContent a {
+  color: rgb(148, 19, 19);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+.dropdown-menu i{
+  font-size: 15px;
+}
+/* .dropdown {
+  display: block;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  padding: 0 !important;
+  border-radius: 2px !important;
+  min-width: 20px;
+  z-index: 1;
+  text-align: left;
+  font-size: 10px;
+}
+.dropdown-menu a {
+  text-decoration: none;
+  font-size: 22px !important;
+  display: block;
+}
+.dropdown-menu a:hover {
+  background-color: white;
+}
+.dropdown:hover .dropdown-menu {
+  display: list-item;
+  width: fit-content;
+  margin: auto;
+  border: white;
+  color: black;
+  background-color: white;
+} */
+.dropdown-menu a:hover{
+  color: rgb(148, 19, 19);
+  background-color: white;
+}
+.dropdown-menu a{
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px;
+  margin: 0;
+}
+.alert{
+  color: rgb(148, 19, 19);
+  font-family: 'Cardo', serif;
+  font-size: 16px;
+}
+@media screen and (max-width : 1920px){
+  .carousel-item img {
+    height: 72vh;
+  }
+}
+@media screen and (max-width : 800px){
+  .carousel-item img {
+    height: auto;
+  }
+}
+.carousel-caption{
+  background-color: rgba(0,0,0,0.60);
+  animation: fadeBackground 6s;
+  animation-fill-mode: forwards;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+  width: 30%;
+  border-radius: 5px;
+}
+@keyframes fadeBackground {
+  from { background-color: black; }
+  to { background-color: rgba(0,0,0,0.60); }
+}
+.imgbt{
+  padding-left: 15px;
+}
+.welcome{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+.explore{
+  font-family: 'Cardo', serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+.luxury{
+  font-weight: 200;
+  font-family: 'Cardo', serif;
+  font-style: italic;
+  color: rgb(148, 19, 19);
+  font-size: 25px;
+}
+.subheads{
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  margin: 0;
+}
+.myhr{
+  background-color: black;
+  height: 5vh;
+}
+.key h4{
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+.key p{
+  font-family: 'Cardo', serif;
+  font-weight: 900;
+  font-size: 18px;
+  text-align: center;
+}
+.room img{
+  height: 50vh;
+}
+.grids {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: white;
+}
+.mycontainer{
+  width: max-content;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 0.5fr));
+  gap: 10px;
+  box-sizing: border-box;
+}
+.mycontainer .box1{
+  position: relative;
+  width: 310px;
+  background: url(../img/hotrestu4.jpg);
+  background-position: center;
+  height: 30vh;
+  background-size: cover;
+  padding: 30px 30px 40px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.mycontainer .box2{
+  position: relative;
+  width: 310px;
+  background: url(../img/hotelgym.jpg);
+  background-position: center;
+  height: 30vh;
+  background-size: cover;
+  padding: 30px 30px 40px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.mycontainer .box3{
+  position: relative;
+  width: 310px;
+  background: url(../img/hotindswm.jpg);
+  background-position: center;
+  height: 30vh;
+  background-size: cover;
+  padding: 30px 30px 40px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.mycontainer .box1{
+  transition: all 1.5s ease;
+}
+.mycontainer .box1:hover{
+  transform: scale(1.1)
+}
+.mycontainer .box2{
+  transition: all 1.5s ease;
+}
+.mycontainer .box2:hover{
+  transform: scale(1.1)
+}
+.mycontainer .box3{
+  transition: all 1.5s ease;
+}
+.mycontainer .box3:hover{
+  transform: scale(1.1)
+}
+.transbox {
+  background-color: rgb(24, 23, 23);
+  margin-top: 30px;
+  border: 0.5px solid white;
+  opacity: 0.9;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+}
+.grids h5{
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  margin: 5%;
+  font-size: 20px;
+}
+.roomcat h6{
+  font-family: 'Cardo', serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+.inner{
+  overflow: hidden;
+}
+.inner img{
+  transition: all 1.5s ease;
+  height: auto;
+}
+.inner:hover img{
+  transform: scale(1.2)
+}
+.promo h6{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.promo p{
+  font-family: 'Cardo', serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+.btn {
+  color: white;
+  background-color: rgb(148, 19, 19);
+  border-radius: 10px;
+  font-family: 'Cardo', serif;
+  font-weight: 700;
+  font-size: 15px;
+}
+.btn:hover{
+  border-color: rgb(148, 19, 19);
+  background-color: white;
+  color: rgb(148, 19, 19);
+}
+.grids2 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 8vh;
+  background: white;
+  color: white;
+}
+.accordion {
+  /* box-shadow: 0 0 5px black; */
+  overflow: hidden;
+  border-radius: 5px;
+  font-family: 'Cardo', serif;
+  background: white;
+  font-weight: 900;
+  font-size: 18px;
+}
+.accordion-button{
+  font-size: 16px;
+  font-weight: 900;
+  font-size: 18px;
+}
+.accordion-body {
+  background: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  padding: 4px;
+  padding-left: 3px;
+}      
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23941313'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: rgb(148, 19, 19);
+  outline: 0!important;
+  box-shadow: 0 0 0 0.25rem rgb(255,255,255, 0.25);
+}
+.map{
+  background-color: black;
+}
+.map h6{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 900;
+}
+.map p{
+  font-family: 'Cardo', serif;
+  font-weight: 900;
+  font-size: 18px;
+  color: white;
+}
+.safety{
+  font-family: 'Cardo', serif;
+  font-weight: 900;
+  font-size: 16px;
+  text-align: center;
+  justify-content: center;
+}
+.covid{
+  font-family: 'Cardo', serif;
+  font-weight: 900;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(148, 19, 19);
+  text-decoration: underline rgb(148, 19, 19);
+}
+.covid:hover{
+  color: rgb(148, 19, 19);
+  text-decoration: underline rgb(148, 19, 19);
+}
+.top i{
+  text-align: center;
+  font-size: 16px;
+  color: rgb(148, 19, 19);
+  font-family: 'Cardo', serif;
+}
+.top a{
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+  color: black;
+  font-family: 'Cardo', serif;
+  text-decoration: none;
+}
+.top a:hover{
+  text-decoration: underline rgb(148, 19, 19);
+}
+.recap a {
+  color: rgb(148, 19, 19);
+  font-size: 17px;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+.recap a:hover{
+  text-decoration: none;
+}
+.footer {
+  background: white;
+}
+.footer i{
+  color: rgb(148, 19, 19);
+  padding: 16px;
+}
+.flogo img{
+  height: 17vh;
+  width: auto;
+  padding-top: 0px;
+}
+.footer a, p, span{
+  color: black;
+  font-family: 'Cardo', serif;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 30px;
+}
+.footer a:hover{
+  text-decoration: underline;
+}
+.footer h4{
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+.copy{
+  font-family: 'Cardo', serif;
+}
+.myhr{
+  width: 50% !important;
+}
+.rooms h5{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.rooms h6{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+.rooms p{
+  font-family: 'Cardo', serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+.rooms i{
+  color: rgb(148, 19, 19);
+  font-family: 'Cardo', serif;
+  font-weight: 700;
+}
+.singleroom{
+  font-family: 'Cardo', serif;
+  font-weight: 900;
+  font-size: 17px;
+  margin: 5px;
+}
+.singleroom i{
+  color: rgb(148, 19, 19);
+}
+.bookings{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.bookings a{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(148, 19, 19);
+}
+.bookings a{
+  text-decoration: none;
+}
+.bookings h4{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+.bookings .btn{
+  color: white;
+}
+.bookings .btn:hover{
+  color: rgb(148, 19, 19);
+  background-color: white;
+}
+.profile{
+  font-family: 'Cardo', serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+.table-responsive-sm{
+  overflow-y: scroll;
+  height: 40vh;
+}
+.parallax img{
+  width: 100%;
+  opacity: 0.7;
+  height: 50vh;
+} 
+.hero-imageroom {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/starlight/img/ecoroom1.jpg");
+  /* Set a specific height */
+  height: 50vh;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-imagefit {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/starlight/img/hotelgym.jpg");
+  /* Set a specific height */
+  height: 50vh;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-imagegallery {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/starlight/img/collageimage.jpg");
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-imagerest {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/starlight/img/hotelrest.jpg");
+  /* Set a specific height */
+  height: 50vh;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+} */
+/* .parallax{
+  width: 92.4%;
+  width: 100%;
+} */
+
+.carouselmodal{
+  background-color: black;
+  opacity: 1;
+}
+.modal img{
+  height: 60vh;
+  width: fit-content;
+}
+.modal-header i{
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  background-color: black;
+  padding: 25px;
+  opacity: 8;
+}
+.modal-content{
+  background-color: black;
+}
+#exampleModal0 .modal-content{
+  background-color: white;
+}
+.myrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.myrow h4{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  padding-top: 40px;
+}
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+}
+.column img {
+  padding: 2px;
+  vertical-align: middle;
+  width: fit-content;
+}
+.column2 {
+  flex: 25%;
+  max-width: 25%;
+}
+.column2 img {
+  margin-top: 4px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.resturanttext{
+  font-family: 'Cardo', serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+.fitness h4{
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(148, 19, 19);
+}
+.fitness p{
+  font-family: 'Cardo', serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+.fitness h6{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic;
+  color: rgb(148, 19, 19);
+}
+.myinner{
+  overflow: hidden;
+}
+.myinner img{
+  transition: all 1.5s ease;
+}
+.myinner:hover img{
+  transform: scale(1.2)
+}
+.myinner2{
+  overflow: hidden;
+}
+.myinner2 img{
+  transition: all 1.5s ease;
+  max-height: 30vh;
+}
+.myinner2:hover img{
+  transform: scale(1.2)
+}
+
+.myinner3{
+  overflow: hidden;
+}
+.myinner3 img{
+  transition: all 1.5s ease;
+  max-height: 30vh;
+}
+.myinner3:hover img{
+  transform: scale(1.2)
+}
+
+
+.imagecontainer {
+  position: relative;
+}
+.imagecard:hover {
+  background: rgb(28, 28, 28);
+}
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.imagecontainer:hover .image {
+  opacity: 0.3;
+}
+.imagecontainer:hover .middle {
+  opacity: 1;
+}
+.imagetext {
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #fef6f6;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: rgb(148, 19, 19);
+  content: ">";
+}
+ul.breadcrumb li{
+  display: inline;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  color: black;
+  text-decoration: none;
+}
+ul.breadcrumb li a{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13px;
+  color: #555555;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #011b3a;
+  text-decoration: underline black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.accordion__label{
+    padding-right: 25px;
+    padding-left: 10px;
+}
+.accordion__content {
+  padding: 5px 5px;
+}
+.accordion__label {
+  display: block;
+  font-size: smaller;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+}
+.accordion__label:hover {
+  background: rgb(204, 64, 64);
+  color: white;
+}
+
+.accordion__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  width: 8px;
+  height: 5px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%2394131399;" /></svg>');
+  background-size: contain;
+  transition: transform 0.4s;
+}
+
+
+.accordion__input {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-25%) rotate(0.5turn);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

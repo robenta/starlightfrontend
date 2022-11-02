@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="/starlight/css/style.css">
+    <link rel="stylesheet" href="/starlight/js/script.js">
+
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Starlight Hotel</title>
+  </head>
+    <body>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header mx-auto">
+                <a class="offcanvas-title" id="offcanvasExampleLabel" href="/index.html"><img src="/starlight/img/mylogo.png"></a>
+            </div>
+            <div class="offcanvas-body text-center">
+                <ul class="navbar-nav d-block mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/allrooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/restaurant.html">Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/fitness.html">Fitness</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contact
+                            </a>
+                            <ul class="dropdown-menu justify-content-center" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item"><i class="bi bi-telephone-fill"></i> +234-906-601-2850</a>
+                                <a class="dropdown-item"><i class="bi bi-telephone-fill"></i> +234-906-601-2850</a>
+                                <a class="dropdown-item"><i class="bi bi-telephone-fill"></i> +234-906-601-2850</a>
+                                <a class="dropdown-item"><i class="bi bi-telephone-fill"></i> +234-906-601-2850</a>
+                                <a class="dropdown-item"><i class="bi bi-envelope-fill"></i> contact@starlight.com</a>
+                                <a class="dropdown-item"><i class="bi bi-envelope-fill"></i> contact@starlight.com</a>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Contact</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg> 09066012850</a>
+                            <a class="dropdown-item" ><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg> 09066012850</a>
+                            <a class="dropdown-item"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg> 09066012850</a>
+                            <a class="dropdown-item"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg> 09066012850</a>
+                            </div>
+                        </li>
+                    </ul>     -->
+                    <li class="nav-item">
+                        <a  class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg> Close
+                        </a> 
+                    </li>
+                </ul> 
+            </div>
+        </div>
+
+        <div class="container-fluid shadow bg-body rounded sticky-top pt-0">
+            <nav class="navbar navbar-expand-lg p-0 mt-0">
+                <div class="container-fluid">
+                    <div class="d-inline-flex m-auto">
+                        <a class="navbar-brand" href="/index.html"><img src="/starlight/img/mylogo.png"></a>
+                    </div>
+                    <div class="d-inline-flex m-auto">
+                        <a class="nav-link active" aria-current="page" href="#offcanvasExample" data-bs-toggle="offcanvas"  aria-controls="offcanvasExample"><i class="fa fa-bars"></i></a>
+                    </div>  
+                </div>
+            </nav>
+            <div class="container availability pt-0">
+                <form method="POST" action="">
+                    <div class="row text-start">
+                        <div class="col-md-2 col-lg-3 pt-1 avacol">
+                            Check-in <br>
+                            <input type="date" name="check_in" class="form-control" required>
+                            <input type="hidden" name="itemid" value="">
+                        </div>
+                        <div class="col-md-2 col-lg-3 pt-1">
+                            Check-out <br>
+                            <input type="date" name="check_out" class="form-control" required>
+                            <input type="hidden" name="itemid" value="">
+                        </div>
+                        <div class="col-md-2 col-lg-2 pt-1">
+                            Room(s) <br>
+                            <select name="cars" id="cars" class="form-control" required>
+                                <option value="1" class="select">1</option>
+                                <option value="2" class="select">2</option>
+                                <option value="3" class="select">3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 col-lg-2 pt-1">
+                            Person(s) <br>
+                            <select name="cars" id="cars" class="form-control" required>
+                                <option value="1" class="select">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>   
+                        <div class="col-md-3 col-lg-2 pt-4 mt-1">
+                            <button type="submit" class="btn">Check Availability</button>
+                        </div>                 
+                    </div>
+                    <!-- <div class="container pt-3"> 
+                        <nav id="eventbtn">
+                            <button type="submit" class="btn">Check Availability</button>
+                        </nav>
+                    </div>  -->
+                </form>
+            </div>
+        </div>
+
+        <div class="container bottomform">
+            <div class="availability2 pt-2 fixed-bottom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+               <button class="btn">CHECK AVAILABILITY</button> 
+            </div>
+
+            <div class="offcanvas offcanvas-end bottomformbody" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+                    <i class="bi bi-x-lg" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></i>                        
+                </div>
+                <div class="offcanvas-body">
+                    <form method="POST" action="">
+                        <div class="row text-start">
+                            <div class="col-md-2 col-lg-3 pt-3 avacol">
+                                Check-in <br>
+                                <input type="date" name="check_in" class="form-control" required>
+                                <input type="hidden" name="itemid" value="">
+                            </div>
+                            <div class="col-md-2 col-lg-3 pt-3">
+                                Check-out <br>
+                                <input type="date" name="check_out" class="form-control" required>
+                                <input type="hidden" name="itemid" value="">
+                            </div>
+                            <div class="col-md-2 col-lg-2 pt-3">
+                                Room(s) <br>
+                                <select name="cars" id="cars" class="form-control" required>
+                                    <option value="1" class="select">1</option>
+                                    <option value="2" class="select">2</option>
+                                    <option value="3" class="select">3</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2 col-lg-2 pt-3">
+                                Person(s) <br>
+                                <select name="cars" id="cars" class="form-control" required>
+                                    <option value="1" class="select">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>                 
+                        </div>
+                        <div class="container mt-5"> 
+                            <nav id="eventbtn">
+                                <button type="submit" class="btn">Check Availability</button>
+                            </nav>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/starlight/img/hotellobby.jpg" class="img-fluid w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/starlight/img/hotrestu2.jpg" class="img-fluid w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="/starlight/img/ecobath1.jpg" class="img-fluid w-100">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <p id="top"></p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 text-center pt-4">
+                    <h1 class="welcome">WELCOME <br> TO <br> STARLIGHT HOTEL</h1>
+                    <p class="luxury">Luxury, Comfort and Hospitality</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <p class="explore">Explore the new Starlight Hotel Lagos, centrally located in Lekki-Lagos. Our brand new hotel in Lagos boasts 90 guestrooms, including 5 contemporary loft suites with first class amenities to ensure a comfortable and productive stay for work or play. 
+                    With 8 meeting rooms on the 2nd floor, fully equipped with state-of-the-art A/V technology and Free high-speed, wireless Internet, we are ready for your business.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <p class="explore">At Starlight Hotel, our goal has always been to offer more than a luxurious place to sleep, more than exceptional business facilities with the latest technology, more than personalized service, more than outstanding food and amenities.
+                    Our goal is to provide each guest with a hotel experience unlike any other - all at reasonably budget friendly rates. Whichever Starlight location you choose, be rest assured of our renowned hospitality and homely ambiance.</p> 
+                </div>
+            </div>
+        </div> 
+
+        <hr class="myhr">
+        <h2 class="subheads">Key Amenities</h2> 
+        <div class="container-fluid pt-3">
+            <div class="grids mb-3">
+            <div class="container mycontainer">
+                <div class="box1">
+                <div class="transbox">
+                    <h5> High-end Restaurant</h5> 
+                </div>
+                </div>
+                <div class="box2">
+                <div class="transbox">
+                    <h5> Fitness and Relaxation</h5> 
+                </div>
+                </div>
+                <div class="box3">
+                <div class="transbox">
+                    <h5>Indoor and Outdoor Pool</h5>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <hr class="myhr">
+        <h2 class="subheads">Our Services</h2>
+        <div class="container-fluid text-center pt-5">
+            <div class="key">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                    <h4>24-hour Room Service</h4> 
+                    <p>At Starlight, Our room service marshals work round the clock to meet your needs. Courteous and professional,
+                    Starlight is sure to deliver top class service to you.</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                    <h4>Fully equipped Gymnasium</h4>
+                    <p>Burn those calories and relax! Stay fit and healthy in our well-equipped gymnasium.
+                    Starlight doesn't only look after your relaxation and enjoyment but also your Well-being.</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                    <h4>Restaurant</h4>
+                    <p>Starlight restaurant and bar is open 24 hours daily, serving you delicious Continental and Foreign cuisine.</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                    <h4>Indoor and Outdoor Pools</h4>
+                    <p>We have very clean pools,large enough for your evening gathering and various kinds pool parties 
+                    with well trained attendants to make your experience memorable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="myhr">
+        <h2 class="subheads">Rooms and Suites</h2>
+        <div class="container-fluid mx-auto pt-5">
+            <div class="row row-cols-1 row-cols-md-3 justify-content-center g-3 pt-1 roomcat">
+            <div class="col mypromo2">
+                <div class="card myinner2">
+                    <img src="/starlight/img/newsuite1.jpg" class="card-img" height="200">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Business Suite</h6>
+                        <a href="/allrooms.html" class="btn">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col mypromo2">
+                <div class="card myinner2">
+                <img src="/starlight/img/famrmnw2.jpg" class="card-img" height="200">
+                <div class="card-body text-center">
+                    <h6 class="card-title">Family Room</h6>
+                    <a href="/allrooms.html" class="btn">View</a>
+                </div>
+                </div>
+            </div>
+            <div class="col mypromo2">
+                <div class="card myinner2">
+                <img src="/starlight/img/ecoroom1.jpg" class="card-img" height="200">
+                <div class="card-body text-center">
+                    <h6 class="card-title">Economy room</h6>
+                    <a href="/allrooms.html" class="btn">View</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <hr class="myhr">
+        <h2 class="subheads">Promotions and Offers</h2> 
+        <div class="container-fluid pt-5">
+            <div class="row row-cols-12 row-cols-md-2 row-cols-lg-2 justify-content-center pt-1">
+                <div class="col">
+                    <div class="card" style="max-width: 600px;">
+                        <div class="row g-0">
+                            <div class="col-md-6 col-lg-6">
+                                <img src="/starlight/img/elderly1.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h6 class="card-title">Senior Discount</h6>
+                                    <p class="card-text">We appreciate our seniors! And so, our seniors 62 years or older get to 
+                                    save at least 10% on their room rate at Starlight hotel with our senior discount deals.
+                                    </p>  
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="max-width: 600px;">
+                        <div class="row g-0">
+                            <div class="col-md-6 col-lg-6">
+                                <img src="/starlight/img/promopic.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h6 class="card-title">Membership Deals</h6>
+                                    <p class="card-text">Enjoy much lower prices when you book directly from our website.
+                                    Get discounted prices with Starlight membership points.
+                                    </p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>   
+
+        <div class="container-fluid map p-3 mt-5">
+            <div class="row">
+            <div class="col-xs-12 col-md-4 col-lg-4 p-4">
+                <br>
+                <h6>FINDING OUR LOCATION</h6>
+                <br>
+                <p>Starlight Hotel Lekki <br>
+                1 Bisway St, Maroko 106104, Lekki-Lagos <br>
+                Tel: +234 906-601-2850</p>
+            </div>
+            <iframe class="col-xs-12 col-md-8 col-lg-8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.675144781444!2d3.4516297!3d6.4357545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf73c138dbedb%3A0x6ce2cd9ce683c562!2sThe%20Palms%20Shopping%20Mall!5e0!3m2!1sen!2sng!4v1665741519627!5m2!1sen!2sng" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <br>
+        <h2 class="subheads">FAQs</h2>
+        <div class="container-fluid myaccordion pt-5">
+            <div class="row">
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2"></div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed"  data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Does Starlight offer free wifi?
+                    </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong> <p>Yes! Our esteemed guests can enjoy fast, wireless service from anywhere in the hotel.</p></strong>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Does Starlight offer complimentary breakfast?
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong><p>Complimentary breakfast is available to our business suites and family rooms 
+                        and also available on request to our economy guestrooms with acquired Starlight points. 
+                        More info on this is listed on our Promotions and offers section.</p></strong>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Does Starlight allow smoking?
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong><p>No. Starlight is a smoke free hotel. Smoking will attract a fine.</p></strong>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Does Starlight allow pets?              
+                    </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong><p>Yes. Guests are allowed to bring pets. Do endeavour to speak to a representative for further clarifications.</p></strong>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Where is Starlight Hotel located?              
+                    </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong> <p>Starlight Hotel is located at 301 Victoria way, Allen road, victoria island-lagos.</p></strong>
+                    </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        What is the check-in and check-out time at Starlight?
+                    </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong><p>Check-in is at 12:00 noon and check-out is at 12:00 noon.</p></strong>
+                    </div>
+                    </div>
+                </div>
+                </div> 
+            </div>
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2"></div>  
+            </div>
+        </div>
+
+        <div class="container-fluid text-center pt-5">
+            <p class="safety">The health and safety of our guests is our top priority:<a href="#exampleModal0" data-bs-toggle="modal" class="covid"> COVID-19 updates and what to expect at our hotel.</a></p>
+            <div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel0" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel0">COVID-19 updates and safety precautions</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <a type="button" class="btn" data-bs-dismiss="modal">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center top">
+            <i class="bi bi-arrow-up"></i><i class="bi bi-arrow-up"></i> <a href="#top">Go to top</a> <i class="bi bi-arrow-up"></i><i class="bi bi-arrow-up"></i>
+        </div>
+
+        <div class="container-fluid text-center shadow-lg mt-4 mb-1 bg-body rounded mt-2">
+            <div class="row recap">
+            <div class="col-sm-2 col-md-2 col-lg-3">
+                <a href="/index.html">Home</a>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <a href="/allrooms.html">Rooms</a>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <a href="/restaurant.html">Restaurant</a>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <a href="/fitness.html">Fitness</a>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-3">
+                <a href="/gallery.html">Gallery</a>
+            </div>
+            <!-- <div class="col-sm-2 col-md-2 col-lg-2">
+                <a href="/">My Bookings</a>
+            </div> -->
+            </div>
+        </div> 
+
+        <div class="container-fluid p-3 text-center footer">
+            <div class="container m-auto flogo">
+                <a href="index.html"><img src="/starlight/img/mylogo.png"></a> <br>
+                <a href="https://www.instagram.com/robentaa"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.twitter.com/oh_itsrobby"><i class="bi bi-twitter"></i></a>
+                <a href="https://wa.me/2349066012850?text=I%27d%20like%20to%20make%20an%20enquiry"><i class="bi bi-whatsapp"></i></a>
+                <a href="mailto:robentaahimie4@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                <a href="https://www.pinterest.com/robentaa"><i class="bi bi-pinterest"></i></a> <br><br>
+                <a href="https://g.page/ThePalmsMall?share" data-mdb-toggle="tooltip" data-mdb-placement="top" title="Starlight Hotel">
+                <span> 1, Bisway St, Maroko 106104, Lekki-Lagos</span>
+                </a> <br>
+                <p>Phone: +234 906-601-2850 | Hotel Reservations: +234 906-601-2850 <br> contact@starlighthotel.com </p>
+            </div>
+            <div class="container text-center copy pb-4">
+                <hr>
+                <span> &copy; 2021 Starlight Hotel Group. <br>
+                All rights reserved.</span>
+                <p>Designed by Robenta</p>
+            </div> 
+        </div>
+
+
+        <!-- <div class="container-fluid p-3 text-center footer">
+            <div class="row">
+            <div class="col-12 col-sm-12 col-md-5 col-lg-4 flogo">
+                <a href="index.html"><img src="/starlight/img/mylogo.png"></a>
+                <br>
+                <a href="https://www.instagram.com/robentaa"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.twitter.com/oh_itsrobby"><i class="bi bi-twitter"></i></a>
+                <a href="https://wa.me/2349066012850?text=I%27d%20like%20to%20make%20an%20enquiry"><i class="bi bi-whatsapp"></i></a>
+                <a href="mailto:robentaahimie4@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                <a href="https://www.pinterest.com/robentaa"><i class="bi bi-pinterest"></i></a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-4 p-3">
+                <h4>Contact Us</h4>
+                <a>
+                09066012850 <br>
+                09066012850 <br>
+                contact@starlighthotel.com 
+                </a>  
+            </div>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-4 p-3">
+                <h4>Our Address</h4>
+                <a href="https://g.page/ThePalmsMall?share" data-mdb-toggle="tooltip" data-mdb-placement="top" title="Starlight Hotel">
+                <span> 1, Bisway St, Maroko 106104, Lekki-Lagos</span>
+                </a>
+            </div>
+            </div>
+            <hr>
+            <div class="container-fluid text-center copy">
+            <span> &copy;2021 Starlight Hotel Group. <br>
+            All rights reserved.</span>
+            <p>Designed by Robenta</p>
+            </div> 
+        </div> -->
+
+        <!-- Optional JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+
+
+
+
+

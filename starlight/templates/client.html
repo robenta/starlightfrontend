@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Client Page {% endblock title %}
+
+{% block content %}
+
+<div class="container mt-5 mb-5">
+  <h1 class="h1 text-warning">Client's Details page</h1>
+  <div class="row">
+    <div class="col-12 col-6 col-lg-3"></div>
+    <div class="col-12 col-6 col-lg-6">
+     <ul class="list-group">
+       <li class="list-group-item">Name: {{client.first_name}}</li>
+       <li class="list-group-item">Name: {{client.last_name}}</li>
+       <li class="list-group-item">Name: {{client.phone}}</li>
+       <li class="list-group-item">Name: {{client.user.email}}</li>
+       <li class="list-group-item"><img src="{{client.image.url}}" style="width: 200px;"></li>
+     </ul>
+    </div>
+    <div class="col-12 col-6 col-lg-3"></div>
+  </div>
+</div>
+
+
+{% endblock content %}
+
+

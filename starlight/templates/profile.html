@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} My Profile {% endblock title %}
+
+{% block content %}
+
+<div class="container-fluid">
+  <div class="container-fluid">
+    <br>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4"></div>
+      <div class="col-12 col-sm-12 col-md-2 col-lg-4 profile  shadow-lg p-3 mb-5 bg-body rounded">
+        <h3 class="subheads">My Profile</h3>
+        <hr class="myhr">
+        <br>
+        First Name : {{client.first_name}} <br>
+        Last Name : {{client.last_name}} <br>
+        Username : {{user.username}} <br>
+        Email : {{client.user.email}} <br>
+        Phone Number : {{client.phone}} <br>
+        <form method="POST" action="{% url 'password' %}">
+          {% csrf_token %}
+          <div class="form-group">
+              {{form.as_p}}
+              Change your password : <button type="submit" class="btn">Change</button>
+          </div>
+        </form>
+      </div>
+      <!-- <div class="col-12 col-sm-12 col-md-2 col-lg-3"><img src="{% static 'img/mylogo.png' %}"></div> -->
+      <div class="col-12 col-sm-12 col-md-2 col-lg-4"></div>
+  </div>  
+</div>
+
+
+{% endblock content %}
+

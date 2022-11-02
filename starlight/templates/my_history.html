@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}History{% endblock title %}
+{% load mathfilters %}
+{% load humanize %}
+{% block content %}
+<div class="container-fluid">
+    <br>
+    <h4 class="subheads">Reservation history</h4>
+    <br>
+    <div class="row row-cols-1 row-cols-md-1 justify-content-center">
+        <div class="table-responsive-sm">
+            <table class="table table-bordered table-hover overflow-auto">
+                <thead>
+                    <tr>
+                        <th scope="col">Delete</th>
+                        <th scope="col">Room</th>
+                        <th scope="col">Check-in</th>
+                        <th scope="col">Check-out</th>
+                        <th scope="col">Night(s)</th>
+                        <th scope="col">Room Price(#)</th>
+                        <th scope="col">Room(s)</th>
+                        <th scope="col">Total value(+vat)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% if profile %}
+                        {% for item in profile  %}
+                            <tr>
+                                <td>
+                                    <form method="POST" action="{% url 'deletehistory' %}"> 
+                                        {% csrf_token %}
+                                            <input type="hidden" name="itemid" value="{{item.id}}">
+                                            <button type="submit" class="btn"><b>&times;</b></button>
+                                    </form>
+                                </td>
+                                <td scope="row">{{item.room.name}}</td>
+                                <td>{{item.check_in}}</td>     
+                                <td>{{item.check_out}}</td> 
+                                <td>{{item.nights}}</td>   
+                                <td>#{{item.room.price|floatformat:2|intcomma}}</td>
+                                <td>{{item.quantity}} room(s)</td>
+                                <td>#{{item.room.price|mul:item.nights|floatformat:2|intcomma}}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endif %} 
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}

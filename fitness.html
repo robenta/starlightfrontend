@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="/starlight/css/style.css">
+
+    <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Starlight Hotel</title>
+  </head>
+  <body>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header mx-auto">
+        <a class="offcanvas-title" id="offcanvasExampleLabel" href="/index.html"><img src="/starlight/img/mylogo.png"></a>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav mx-auto text-center mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/allrooms.html">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/restaurant.html">Restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/fitness.html">Fitness</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact
+              </a>
+              <ul class="dropdown-menu justify-content-center" aria-labelledby="dropdownMenuButton1">
+                <a class="dropdown-item"><i class="bi bi-telephone-fill"></i> +234-906-601-2850</a>
+                <a class="dropdown-item"><i class="bi bi-telephone-fill"></i> +234-906-601-2850</a>
+                <a class="dropdown-item"><i class="bi bi-telephone-fill"></i> +234-906-601-2850</a>
+                <a class="dropdown-item"><i class="bi bi-telephone-fill"></i> +234-906-601-2850</a>
+                <a class="dropdown-item"><i class="bi bi-envelope-fill"></i> contact@starlight.com</a>
+                <a class="dropdown-item"><i class="bi bi-envelope-fill"></i> contact@starlight.com</a>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a  class="nav-link" data-bs-dismiss="offcanvas" aria-label="Close" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/></svg> Close
+            </a> 
+          </li>
+        </ul> 
+      </div>
+    </div>
+
+    <div class="container-fluid shadow bg-body rounded sticky-top pt-0">
+      <nav class="navbar navbar-expand-lg p-0 mt-0">
+        <div class="container-fluid">
+          <div class="d-inline-flex m-auto">
+            <a class="navbar-brand" href="/index.html"><img src="/starlight/img/mylogo.png"></a>
+          </div>
+          <div class="d-inline-flex m-auto">
+            <a class="nav-link active" aria-current="page" href="#offcanvasExample" data-bs-toggle="offcanvas"  aria-controls="offcanvasExample"><i class="fa fa-bars"></i></a>
+          </div>  
+        </div>
+      </nav>
+      <div class="container availability pt-0">
+        <form method="POST" action="">
+          <div class="row text-start">
+            <div class="col-md-2 col-lg-3 pt-1 avacol">
+              Check-in <br>
+              <input type="date" name="check_in" class="form-control" required>
+              <input type="hidden" name="itemid" value="">
+            </div>
+            <div class="col-md-2 col-lg-3 pt-1">
+              Check-out <br>
+              <input type="date" name="check_out" class="form-control" required>
+              <input type="hidden" name="itemid" value="">
+            </div>
+            <div class="col-md-2 col-lg-2 pt-1">
+              Room(s) <br>
+              <select name="cars" id="cars" class="form-control" required>
+                <option value="1" class="select">1</option>
+                <option value="2" class="select">2</option>
+                <option value="3" class="select">3</option>
+              </select>
+            </div>
+            <div class="col-md-2 col-lg-2 pt-1">
+              Person(s) <br>
+              <select name="cars" id="cars" class="form-control" required>
+                <option value="1" class="select">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>   
+            <div class="col-md-3 col-lg-2 pt-4 mt-1">
+              <button type="submit" class="btn">Check Availability</button>
+            </div>                 
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container bottomform">
+      <div class="availability2 pt-2 fixed-bottom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <button class="btn">CHECK AVAILABILITY</button> 
+      </div>
+
+      <div class="offcanvas offcanvas-end bottomformbody" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+          <i class="bi bi-x-lg" type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></i>                        
+        </div>
+        <div class="offcanvas-body">
+          <form method="POST" action="">
+            <div class="row text-start">
+              <div class="col-md-2 col-lg-3 pt-3 avacol">
+                Check-in <br>
+                <input type="date" name="check_in" class="form-control" required>
+                <input type="hidden" name="itemid" value="">
+              </div>
+              <div class="col-md-2 col-lg-3 pt-3">
+                Check-out <br>
+                <input type="date" name="check_out" class="form-control" required>
+                <input type="hidden" name="itemid" value="">
+              </div>
+              <div class="col-md-2 col-lg-2 pt-3">
+                Room(s) <br>
+                <select name="cars" id="cars" class="form-control" required>
+                  <option value="1" class="select">1</option>
+                  <option value="2" class="select">2</option>
+                  <option value="3" class="select">3</option>
+                </select>
+              </div>
+              <div class="col-md-2 col-lg-2 pt-3">
+                Person(s) <br>
+                <select name="cars" id="cars" class="form-control" required>
+                  <option value="1" class="select">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>                 
+            </div>
+            <div class="container mt-5"> 
+              <nav id="eventbtn">
+                <button type="submit" class="btn">Check Availability</button>
+              </nav>
+            </div> 
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container-fluid parallax">
+      <div class="card">
+        <img src="/starlight/img/spa6.jpg">
+      </div>  
+    </div> -->
+    
+    <div class="hero-imagefit">
+    </div>
+
+    <ul class="breadcrumb">
+      <li><a href="/index.html">Home</a></li>
+      <li>Fitness</li>
+    </ul>
+
+    <br>
+    <h3 class="subheads">FITNESS & RELAXATION</h3>
+    <hr class="myhr">
+    <div class="container text-center fitness pt-4">
+      <h4>Keep your fitness lifestyle active while you stay with us</h4>
+      <p> 
+        Being away from home can easily interrupt the fitness routine of even those with the best intentions.  
+        Starlight Hotel makes staying on track a breeze with our 24-hour Fitness Center, located on the third floor. 
+        This light-filled space boasts a wide range of cardio equipment (including two fully connected Peloton Bikes) as well as a large selection of free weights and weight-assisted lifting equipment, all in an open, energizing environment.
+        An adjoining 75-foot indoor lap pool and locker facilities complete the package,
+         allowing fitness enthusiasts of all types to maintain their programs while on the road. 
+      </p>   
+        <h6>Open daily, 24 hours a day</h6>
+      <p>
+        Our fitness equipment includes five treadmills, three elliptical machines, one stationary bike plus weight training machines, and a free weights area.
+        *These machines* are fully connected and ready for your next ride.
+      </p>
+    </div>
+    <div class="container-fluid">
+      <div class="row myrow">
+        <div class="column2">
+          <img src="/starlight/img/hotindswm.jpg">
+          <img src="/starlight/img/hotelgym.jpg">
+          <img src="/starlight/img/hotelgym3.jpg">
+          <img src="/starlight/img/spa4.jpg">
+          <img src="/starlight/img/hotelpool.jpg">
+          <img src="/starlight/img/hotelpool2.jpeg">
+          <img src="/starlight/img/suitehotub.jpg">
+        </div>
+        <div class="column2">
+          <img src="/starlight/img/spa1.jpg">      
+          <img src="/starlight/img/hotelpool.jpg"> 
+          <img src="/starlight/img/suitehotub.jpg">
+          <img src="/starlight/img/suitebath1.jpg">
+          <img src="/starlight/img/hotindswm.jpg">  
+          <img src="/starlight/img/spa5.jpg">        
+          <img src="/starlight/img/hotelgym2.jpg">
+        </div>
+        <div class="column2">
+          <img src="/starlight/img/hotelgym.jpg">
+          <img src="/starlight/img/hotelgym2.jpg">
+          <img src="/starlight/img/hotelgym3.jpg">          
+          <img src="/starlight/img/hotelpool2.jpeg">
+          <img src="/starlight/img/spa2.jpg">
+          <img src="/starlight/img/suitebath2.jpg">
+          <img src="/starlight/img/spa3.jpg">   
+        </div>
+        <div class="column2">          
+          <img src="/starlight/img/hotelpool.jpg">
+          <img src="/starlight/img/hotelgym.jpg">
+          <img src="/starlight/img/hotelpool2.jpeg">
+          <img src="/starlight/img/hotelgym3.jpg">    
+          <img src="/starlight/img/spa6.jpg">      
+          <img src="/starlight/img/suitehotub.jpg">
+          <img src="/starlight/img/hotindswm.jpg">          
+        </div>
+      </div>  
+    </div>    
+
+
+    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'img/hotelgym2.jpg' %}" class="img-fluid w-100" alt="gym">
+          <div class="carousel-caption">
+            <h5 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">GYM</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/hotelgym3.jpg' %}" class="img-fluid w-100" alt="indoor pool">
+          <div class="carousel-caption">
+            <h5 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">GYM</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/spa1.jpg' %}" class="img-fluid w-100" alt="spa">
+          <div class="carousel-caption">
+            <h5 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">SPA</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/spa5.jpg' %}" class="img-fluid w-100" alt="spa">
+          <div class="carousel-caption">
+            <h5 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">SPA</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/spa6.jpg' %}" class="img-fluid w-100" alt="spa">
+          <div class="carousel-caption">
+            <h5 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">SPA</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/hotindswm.jpg' %}" class="img-fluid w-100" alt="swimmingpool">
+          <div class="carousel-caption">
+            <h5 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">INDOOR SWIMMING POOL</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'img/hotelpool2.jpeg' %}" class="img-fluid w-100" alt="swimmingpool">
+          <div class="carousel-caption">
+            <h5 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">OUTDOOR SWIMMING POOL</h5>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div> -->
+  
+    <div class="container-fluid text-center shadow-lg mt-4 mb-1 bg-body rounded mt-2">
+      <div class="row recap">
+        <div class="col-sm-2 col-md-2 col-lg-3">
+          <a href="/index.html">Home</a>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <a href="/allrooms.html">Rooms</a>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <a href="/restaurant.html">Restaurant</a>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+          <a href="/fitness.html">Fitness</a>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-3">
+          <a href="/gallery.html">Gallery</a>
+        </div>
+        <!-- <div class="col-sm-2 col-md-2 col-lg-2">
+          <a href="/">My Bookings</a>
+        </div> -->
+      </div>
+    </div> 
+
+    <div class="container-fluid p-3 text-center footer">
+      <div class="container m-auto flogo">
+        <a href="index.html"><img src="/starlight/img/mylogo.png"></a> <br>
+        <a href="https://www.instagram.com/robentaa"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.twitter.com/oh_itsrobby"><i class="bi bi-twitter"></i></a>
+        <a href="https://wa.me/2349066012850?text=I%27d%20like%20to%20make%20an%20enquiry"><i class="bi bi-whatsapp"></i></a>
+        <a href="mailto:robentaahimie4@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+        <a href="https://www.pinterest.com/robentaa"><i class="bi bi-pinterest"></i></a> <br><br>
+        <a href="https://g.page/ThePalmsMall?share" data-mdb-toggle="tooltip" data-mdb-placement="top" title="Starlight Hotel">
+          <span> 1, Bisway St, Maroko 106104, Lekki-Lagos</span>
+        </a> <br>
+        <p>Phone: +234 906-601-2850 | Hotel Reservations: +234 906-601-2850 <br> contact@starlighthotel.com </p>
+      </div>
+      <div class="container text-center copy pb-4">
+        <hr>
+        <span> &copy; 2021 Starlight Hotel Group. <br>
+        All rights reserved.</span>
+        <p>Designed by Robenta</p>
+      </div> 
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  </body>
+</html>
