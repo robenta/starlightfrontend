@@ -14,4 +14,4 @@ Features:
 Purpose:
  The goal of this redesign was to demonstrate strong frontend design skills, improve the overall look and usability of the original Django project, and create a visually appealing version suitable for portfolio display.
 
-Live Demo: starlighthotel.netlify.app
+Live Demo: https://starlighthotel.netlify.app
